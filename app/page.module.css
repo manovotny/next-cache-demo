@@ -5,17 +5,18 @@
   min-height: 100vh;
   border: solid 1px hotpink;
   border-style: dashed;
+  padding: 60px;
 }
 
-.container{
+.container {
   padding: 6rem;
 }
 
-.dynamicSection{
+.dynamicSection {
   border: dashed 1px lime;
 }
 
-.dynamicContent{
+.dynamicContent {
   padding: 60px;
   background-color: #1b1b1b;
 }
@@ -110,7 +111,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -138,7 +139,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
