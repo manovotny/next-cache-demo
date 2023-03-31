@@ -9,9 +9,10 @@ export default async function DynamicComponent(): Promise<JSX.Element> {
 
   return (
     <div className={styles.dynamicSection}>
-      <pre
-        className={styles.dynamicContent}
-      >{`✨ Fresh Data (revalidate ${revalidate}): ${timestamp}`}</pre>
+      <pre className={styles.dynamicContent}>
+        <p>✨ Fresh Data: {timestamp}</p>
+        <p>(revalidate {revalidate})</p>
+      </pre>
     </div>
   );
 }
