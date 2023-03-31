@@ -5,11 +5,11 @@
   min-height: 100vh;
   border: solid 1px hotpink;
   border-style: dashed;
-  padding: 60px;
+  padding: 20px;
 }
 
 .container {
-  padding: 6rem;
+  padding: 5px;
 }
 
 .dynamicSection {
@@ -17,7 +17,7 @@
 }
 
 .dynamicContent {
-  padding: 60px;
+  padding: 10px 20px;
   background-color: #1b1b1b;
 }
 
