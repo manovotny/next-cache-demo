@@ -5,12 +5,14 @@ export default async function DynamicComponent(): Promise<JSX.Element> {
   const revalidate = 5;
   const response = await fetch(url, { next: { revalidate } });
   const dynamicData = await response.json();
-  const timestamp = JSON.stringify(dynamicData.datetime);
+  const date = new Date(dynamicData.datetime);
 
   return (
     <div className={styles.dynamicSection}>
       <pre className={styles.dynamicContent}>
-        <p>✨ Fresh Data: {timestamp}</p>
+        <p>
+          ✨ Fresh Data: {date.toLocaleDateString()} {date.toLocaleTimeString()}
+        </p>
         <p>(revalidate {revalidate})</p>
       </pre>
     </div>
